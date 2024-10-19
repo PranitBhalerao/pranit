@@ -8,7 +8,7 @@ public class PranitApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(PranitApplication.class, args);
-		System.out.println("wellcome pranit  devops");
+		System.out.println("wellcome BHale devops");
 	}
 
 }
