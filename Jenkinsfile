@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('01.Clone Repo') {
       steps {
-        echo "cloned updated"
+        echo "cloned "
         //git branch: 'main', credentialsId: 'Proj', url: 'git@github.com:PranitBhalerao/pranit.git'
       }
     }
