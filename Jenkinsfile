@@ -1,7 +1,7 @@
-pileline {
+pipeline {
   agent any
 
-  stage {
+  stages {
     stage('Checkout') {
       steps {
         echo "Welcome"
