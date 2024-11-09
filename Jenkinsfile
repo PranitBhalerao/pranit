@@ -9,12 +9,12 @@ pipeline {
     }
     stage('02.Clean') {
       steps {
-        bat 'cd pranit && mvn clean'
+        bat 'cd PL-continous && mvn clean'
       }
     }
     stage('03.Package') {
       steps {
-       bat 'cd pranit && mvn package'
+       bat 'cd PL-continous && mvn package'
       }
     }
   }
