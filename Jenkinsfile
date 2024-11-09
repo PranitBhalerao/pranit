@@ -9,12 +9,12 @@ pipeline {
     }
     stage('02.Clean') {
       steps {
-        bat 'cd PL-continous && mvn clean'
+        bat 'mvn clean'
       }
     }
     stage('03.Package') {
       steps {
-       bat 'cd PL-continous && mvn package'
+       bat 'mvn package'
       }
     }
   }
