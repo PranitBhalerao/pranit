@@ -4,19 +4,17 @@ pipeline {
   stages {
     stage('01.Clone Repo') {
       steps {
-        echo "cloned "
-        //git branch: 'main', credentialsId: 'Proj', url: 'git@github.com:PranitBhalerao/pranit.git'
+       git branch: 'main', credentialsId: 'Proj', url: 'git@github.com:PranitBhalerao/pranit.git'
       }
     }
     stage('02.Clean') {
       steps {
-        echo "cleaning new"
-         //bat 'mvn clean'
+        bat 'cd pranit && mvn clean'
       }
     }
     stage('03.Package') {
       steps {
-        bat 'mvn package'
+       bat 'cd pranit && mvn package'
       }
     }
   }
