@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   stages {
-    stage('01.Clone NewRepo') {
+    stage('01.Clone Repo') {
       steps {
        git branch: 'main', credentialsId: 'Bhale007', url: 'git@github.com:PranitBhalerao/pranit.git'
       }
