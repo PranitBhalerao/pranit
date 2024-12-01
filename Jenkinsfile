@@ -9,12 +9,12 @@ pipeline {
     }
     stage('02.Clean') {
       steps {
-        bat 'mvn clean'
+        sh 'mvn clean'
       }
     }
     stage('03.Package') {
       steps {
-       bat 'mvn package'
+       sh 'mvn package'
       }
     }
   }
