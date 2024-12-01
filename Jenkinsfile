@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('01.Clone Repo') {
       steps {
-       git branch: 'main', credentialsId: 'Proj', url: 'git@github.com:PranitBhalerao/pranit.git'
+       git branch: 'main', credentialsId: 'Bhale007', url: 'git@github.com:PranitBhalerao/pranit.git'
       }
     }
     stage('02.Clean') {
